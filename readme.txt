@@ -24,3 +24,5 @@
 
 10.cat readme.txt 显示readme.txt内容
 11.用git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
+
+先修改  再添加
