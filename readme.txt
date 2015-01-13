@@ -12,3 +12,5 @@
 6.用git diff 查看修改过什么
  git diff readme.txt
 7.git log 查看历史记录
+8.git reset --hard HEAD^(退回上一个版本) / HEAD^(退回到上上个版本)
+9.git reflog 用来记录没一条命令
