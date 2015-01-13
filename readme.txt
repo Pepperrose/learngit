@@ -23,3 +23,4 @@
 第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
 
 10.cat readme.txt 显示readme.txt内容
+11.用git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
