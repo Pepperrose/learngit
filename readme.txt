@@ -35,3 +35,11 @@
 	   	git commit -m"remove test.txt"
        如果是误删，要恢复的话
        	git checkout -- test.txt
+
+远程仓库
+	第一步创建SSH Key，在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa 和 id_rsa.pub 这两个文件，如果已经有了，可以直接跳到下一步。如果没有，打开Shell(Window 下打开 Git Bash)，创建SSH Key：
+		$ ssh-keygen -t rsa -C "youremail@example.com"
+
+	如果一切顺利的话，可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
+
+	第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面,然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
