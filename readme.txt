@@ -25,4 +25,13 @@
 10.cat readme.txt 显示readme.txt内容
 11.用git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
 
-先修改  再添加
+	先修改  再添加
+
+
+删除文件
+	1、rm 用于删掉文件管理器中的文件 
+	2、如果确定删除 
+	   	git rm test.txt
+	   	git commit -m"remove test.txt"
+       如果是误删，要恢复的话
+       	git checkout -- test.txt
